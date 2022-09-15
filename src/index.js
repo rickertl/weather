@@ -67,7 +67,7 @@ async function getWeather(city) {
     tempNow.innerText = Math.round(weatherData.main.temp);
     conditionsImage.setAttribute(
       "src",
-      "http://openweathermap.org/img/wn/" +
+      "https://openweathermap.org/img/wn/" +
         weatherData.weather[0].icon +
         "@2x.png"
     );
