@@ -1,1 +1,87 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
 
+body {
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+}
+
+form > input {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.big-content {
+  margin-top: 10px;
+  .location {
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+  .temp-now {
+    &::after {
+      content: "\00B0";
+    }
+  }
+  .temp-now {
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 5.25rem;
+    padding-left: 1rem;
+  }
+}
+
+.small-content {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  .temp-units {
+    .inactive {
+      opacity: 0.5;
+    }
+    .fahrenheit,
+    .celsius {
+      cursor: pointer;
+    }
+  }
+  .description {
+    text-transform: capitalize;
+  }
+  .temp-range {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+  .temp-high,
+  .temp-low {
+    &::after {
+      content: "\00B0";
+    }
+  }
+  .temp-high {
+    &::before {
+      content: "H:";
+    }
+  }
+  .temp-low {
+    &::before {
+      content: "L:";
+    }
+  }
+}

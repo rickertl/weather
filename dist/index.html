@@ -8,12 +8,25 @@
   </head>
   <body>
     <form>
-      <label>City: <input type="text" /></label>
+      <input type="text" placeholder="City..." />
     </form>
-    <h2>Location</h2>
-    <div class="location"></div>
-    <h2>Temperature</h2>
-    <div class="temperature"></div>
+    <div class="big-content">
+      <img class="conditions-image" src="" alt="" />
+      <div class="location"></div>
+      <div class="temp-now"></div>
+    </div>
+    <div class="small-content">
+      <div class="temp-units">
+        <span class="fahrenheit">F</span>
+        <span class="inactive"> | </span>
+        <span class="celsius inactive">C</span>
+      </div>
+      <div class="description"></div>
+      <div class="temp-range">
+        <div class="temp-high"></div>
+        <div class="temp-low"></div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
